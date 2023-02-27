@@ -10,7 +10,7 @@ services:
     command: /usr/local/bin/exabgp /etc/exabgp/exabgp.conf
     build:
       context: .
-      dockerfile: ./Dockerfile-stream8-python39
+      dockerfile: ./Dockerfile-stream8-python39-main
     volumes:
       - "$PWD/exabgp.conf:/etc/exabgp/exabgp.conf"
       - "$PWD/exabgp.env:/etc/exabgp/exabgp.env"
